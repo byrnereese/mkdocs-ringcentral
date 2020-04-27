@@ -1,6 +1,7 @@
 # Config options for 'ringcentral' theme
 
 extends: moonstone
+product_section: office
 fluid_layout: True
 suppress_nextprev: true
 highlightjs: true

@@ -12,10 +12,10 @@
         </a>
         <div class="collapse navbar-collapse dpw-category-nav">
           <ul class="navbar-nav">
-            <li class="nav-item office active dpw-category">
+            <li class="nav-item office {% if config.theme.product_section == "office" %}active {% endif %}dpw-category">
               <a class="nav-link" href="https://developers.ringcentral.com/">Office <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item engage dpw-category">
+            <li class="nav-item engage {% if config.theme.product_section == "engage" %}active {% endif %}dpw-category">
               <a class="nav-link" href="https://developers.ringcentral.com/engage/api-products/digital">Engage</a>
             </li>
           </ul>

@@ -76,8 +76,21 @@ body {
     color: rgb(47, 47, 47);
   }
 
-.navbar.secondary {
+.engage #sidebar-nav {
+    background-color: #616161;
+}
+
+.office #sidebar-nav {
+    background-color: #616161;
+}
+
+.engage .navbar.secondary {
+  background-color: #f80;
+}
+.office .navbar.secondary {
   background-color: #0684bd;
+}
+.navbar.secondary {
   font-weight: 300;
   height: 60px;
 }
@@ -96,22 +109,48 @@ body {
   padding: 0;
 }
 
+.office .secondary-nav-cta {
+  background: url(../img/nav-secondary-office-arrow.svg) center right;
+}
+.office .secondary-nav-links a,
+.office .secondary-nav-links .h4,
+.office .secondary-nav-links h4,
+.office .secondary-nav-cta .h3,
+.office  .secondary-nav-cta h3 {
+    color:rgb(6, 132, 189);
+}
+.office .secondary-nav-cta .btn {
+    background-color:rgb(6, 132, 189);
+    border-color:rgb(6, 132, 189);
+}
+
+.engage .secondary-nav-cta {
+  background: url(../img/nav-secondary-engage-arrow.svg) center right;
+}
+.engage .secondary-nav-links a,
+.engage .secondary-nav-links .h4,
+.engage .secondary-nav-links h4,
+.engage .secondary-nav-cta .h3,
+.engage  .secondary-nav-cta h3 {
+    color:#f80;
+}
+.engage .secondary-nav-cta .btn {
+    background-color:#f80;
+    border-color:#f80;
+}
+
 .secondary-nav-cta {
   color:rgb(103,103,103);
   font-size: 14px;
-  background: url(../img/nav-secondary-office-arrow.svg) center right;
   background-size: cover;
   margin-right: 30px;
 }
   .secondary-nav-cta .h3,
   .secondary-nav-cta h3 {
-    color:rgb(6, 132, 189);
     font-weight: 600;
     font-size: 30px;
   }
   .secondary-nav-cta .btn {
-    background-color:rgb(6, 132, 189);
-    border-color:rgb(6, 132, 189);
     color: white;
   }
 
@@ -140,11 +179,9 @@ body {
     margin-top: 10px;
   }
   .secondary-nav-links a {
-    color:rgb(6, 132, 189);
   }
   .secondary-nav-links .h4,
   .secondary-nav-links h4 {
-    color:rgb(6, 132, 189);
     font-weight: 700;
     font-size: 18px;  
   }

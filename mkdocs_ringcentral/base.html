@@ -28,10 +28,10 @@
     <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
     <link href="{{ "css/font-awesome.min.css"|url }}" rel="stylesheet">
     <link href="{{ "css/code-styles.css"|url }}" rel="stylesheet">
-    <link href="{{ "css/mega-menu.css"|url }}" rel="stylesheet">
     <link href="{{ "css/code-tabs.css"|url }}" rel="stylesheet">
     <link href="{{ "css/admonition.css"|url }}" rel="stylesheet">
     <link href="{{ "css/base.css"|url }}" rel="stylesheet">
+    <link href="{{ "css/ringcentral.css"|url }}" rel="stylesheet">
     {%- for path in config['extra_css'] %}
     <link href="{{ path|url }}" rel="stylesheet">
     {%- endfor %}
@@ -64,7 +64,7 @@
     {%- block extrahead %} {% endblock %}
   </head>
   
-  <body class="{% if page and page.is_homepage %}homepage {% endif %}{%- if page and page.meta.jumbotron -%}has-jumbotron {%- endif -%}{%- if page and page.meta.style %}{{ page.meta.style }}{% endif %}" data-spy="scroll" data-target="#toc">
+  <body class="{{ config.theme.product_section }} {% if page and page.is_homepage %}homepage {% endif %}{%- if page and page.meta.jumbotron -%}has-jumbotron {%- endif -%}{%- if page and page.meta.style %}{{ page.meta.style }}{% endif %}" data-spy="scroll" data-target="#toc">
     {% include "main-nav.html" %}
     
     {%- set main_content %}
