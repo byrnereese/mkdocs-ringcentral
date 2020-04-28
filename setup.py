@@ -13,7 +13,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'mkdocs>=1.1',
-        'mkdocs-moonstone>=0.1.8'
+        'mkdocs-moonstone>=0.1.10'
     ],
     python_requires='>=3.0',
     entry_points={
