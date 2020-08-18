@@ -1,4 +1,18 @@
 $(document).ready(function(){
+
+    $('.quick-start').ready( function(e) {
+	var strHash = document.location.hash;
+	if (strHash == "") {
+	} else {
+            strHash = strHash.substring(1);
+	    $('.tabbed-set').children('label').each( function(e) {
+	        if ( $(this).text().toLowerCase() == strHash.toLowerCase() ) {
+		   $(this).prev().click();
+		}
+	    });
+	}
+    });
+    
     $(".dropdown").hover(
         // on mouse enter
         function(e) {
