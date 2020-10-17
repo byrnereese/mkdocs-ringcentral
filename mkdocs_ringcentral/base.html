@@ -66,10 +66,9 @@
   
   <body class="{{ config.theme.product_section }} {% if page and page.is_homepage %}homepage {% endif %}{%- if page and page.meta.jumbotron -%}has-jumbotron {%- endif -%}{%- if page and page.meta.style %}{{ page.meta.style }}{% endif %}" data-spy="scroll" data-target="#toc">
     {% include "main-nav.html" %}
-    
     {%- set main_content %}
     <div class="row flex-nowrap">
-      <div id="sidebar-nav" class="sidebar col-md-3">{% include "side-nav.html" %}</div>
+      {%- if page and page.meta.no_sidenav -%}{% else %}<div id="sidebar-nav" class="sidebar col-md-3">{% include "side-nav.html" %}</div>{%- endif -%}
       <div id="main" class="{%- if config.theme.fluid_layout -%}col{%- else -%}col-md-8{%- endif -%}" role="main">{% include "content.html" %}</div>
       <div id="sidebar-toc" class="sidebar col-md-3">
         <div class="repo">
