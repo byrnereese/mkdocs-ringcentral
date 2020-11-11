@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.9'
+VERSION = '0.1.10'
 
 setup(
     name="mkdocs-ringcentral",
@@ -14,7 +14,7 @@ setup(
     install_requires=[
         'mkdocs>=1.1',
         'mkdocs-ringcentral-api-index>=0.1.2',
-        'mkdocs-moonstone>=0.1.16'
+        'mkdocs-moonstone>=0.1.17'
     ],
     python_requires='>=3.0',
     entry_points={
