@@ -4,7 +4,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="sidebar-navbar-collapse">
-    {%- if nav|length>1 %}
     <!-- Main navigation -->
     <ul class="nav navbar-nav flex-column">
     {%- for nav_item in nav %}
@@ -25,10 +24,9 @@
       </li>
       {%- endif %}
       {%- endfor %}
-    {% if loop.first %}<li class="divider"><hr></li>{% endif %}
+      {%- if nav|length>1 %}{% if loop.first %}<li class="divider"><hr></li>{% endif %}{% endif %}
     {%- endfor %}
     </ul>
-    {%- endif %}
   </div>
 </nav>
 
