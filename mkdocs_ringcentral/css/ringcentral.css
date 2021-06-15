@@ -1,3 +1,16 @@
+@page {
+    font-family: "ProximaNova-Regular","Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media print {
+    .pdf-order {
+	font-family: "ProximaNova-Bold";
+    }
+    article h1 {
+	border-bottom: 2px solid #ff6f00 !important;
+    }
+}
+
 body {
   font-family: 'Lato',Helvetica,Arial,sans-serif !important;
 }
