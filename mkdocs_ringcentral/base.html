@@ -134,8 +134,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
     <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js" defer></script>
+    {%- for path in config['extra_javascript'] %}
+    <script src="{{ path|url }}"></script>
+    {%- endfor %}
     <script src="{{ "js/base.js"|url }}" defer></script>
     {%- endblock %}
+
     {% if 'search' in config['plugins'] %}{%- include "search-modal.html" %}{% endif %}
     {%- include "keyboard-modal.html" %}
     
