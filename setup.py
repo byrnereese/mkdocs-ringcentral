@@ -18,7 +18,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'mkdocs>=1.1',
-        'mkdocs-ringcentral-api-index>=0.1.5',
+        'mkdocs-ringcentral-api-index>=0.1.6',
         'mkdocs-moonstone>=0.2.0'
     ],
     python_requires='>=3.0',
