@@ -261,3 +261,7 @@ body {
 .dpw-category.engage a:hover{
   color:#f80;background-color:rgba(255,136,0,0.2)
 }
+
+.swagger-ui .try-out { display: none }
+.swagger-ui .information-container { display: none }
+.swagger-ui .swagger-ui .wrapper { padding-left: 0 }
