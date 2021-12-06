@@ -11,12 +11,12 @@
       {%- for nav_item in nav_item.children %}
         {% set nav_class = nav_item.title|lower|replace(" ","-")|replace("(","")|replace(")","") %}
       <li id="nav-item-{{ nav_class }}" class="toplevel nav-item{% if nav_item.active %} active{% endif %}" data-toggle="collapse" data-target="#{{ nav_class }}">
-  <!--<i class="nav-item-icon"></i>-->
+      <!--<i class="nav-item-icon"></i>-->
         <span class="section-title">{{ nav_item.title }}</span>
         <ul id="{{ nav_class }}" class="collapse">
-    {%- for nav_item in nav_item.children %}
+          {%- for nav_item in nav_item.children %}
           {% include "nav-sub.html" %}
-    {%- endfor %}
+          {%- endfor %}
         </ul>
       </li>
       {%- endfor %}
