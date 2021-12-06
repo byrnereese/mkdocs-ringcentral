@@ -8,8 +8,7 @@
     <ul class="nav navbar-nav flex-column">
     {%- for nav_item in nav %}
     {%- if nav_item.children %}
-      {%- for nav_item in nav_item.children %}
-        
+      {%- for nav_item in nav_item.children %} 
         {% set nav_class = nav_item.title|lower|replace(" ","-")|replace("(","")|replace(")","") %}
       <li id="nav-item-{{ nav_class }}" class="toplevel nav-item{% if nav_item.active %} active{% endif %}" data-toggle="collapse" data-target="#{{ nav_class }}">
         <!--<i class="nav-item-icon"></i>-->
