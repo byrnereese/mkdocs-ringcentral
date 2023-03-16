@@ -1,6 +1,6 @@
 <nav id="sidenav" class="navbar navbar-default navbar-expand-md navbar-dark" role="navigation">
   <a class="navbar-brand d-block d-md-none d-xl-none" href="#"><i class="fa fa-home fa-fw"></i> Table of Contents</a>
-  <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#sidebar-navbar-collapse" aria-controls="sidebar-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-navbar-collapse" aria-controls="sidebar-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="sidebar-navbar-collapse">
@@ -10,7 +10,7 @@
       {%- for nav_item in nav_item.children %}
       {%- if nav_item.children %}
         {% set nav_class = nav_item.title|lower|replace(" ","-")|replace("(","")|replace(")","") %}
-      <li id="nav-item-{{ nav_class }}" class="toplevel nav-item{% if nav_item.active %} active{% endif %}" data-toggle="collapse" data-target="#{{ nav_class }}">
+      <li id="nav-item-{{ nav_class }}" class="toplevel nav-item{% if nav_item.active %} active{% endif %}" data-bs-toggle="collapse" data-bs-target="#{{ nav_class }}">
       <!--<i class="nav-item-icon"></i>-->
         <span class="section-title">{{ nav_item.title }}</span>
         {%- if nav_item.children %}
