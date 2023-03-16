@@ -299,3 +299,13 @@ body {
 .swagger-ui .try-out { display: none }
 .swagger-ui .information-container { display: none }
 .swagger-ui .swagger-ui .wrapper { padding-left: 0 }
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+}
+.jumbotron .display-5 {
+    font-size: 2rem;
+}
